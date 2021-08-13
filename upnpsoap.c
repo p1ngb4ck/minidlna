@@ -748,7 +748,7 @@ add_res(char *size, char *duration, char *bitrate, char *sampleFrequency,
             }
 
             strcatf(args->str, "protocolInfo=\"http-get:*:%s:%s\"&gt;"
-                    "http://%s:8080/stream/channelid/%s &lt;/res&gt;",
+                    "http://%s:9981/stream/channelid/%s &lt;/res&gt;",
                     mime, dlna_pn, lan_addr[args->iface].str, path);
         } else {
 	strcatf(args->str, "protocolInfo=\"http-get:*:%s:%s\"&gt;"
